@@ -9,7 +9,7 @@ using Microsoft.Extensions.Hosting;
 
 using Microsoft.Extensions.Logging;
 
-namespace Todo.Api
+namespace Todo.API
 {
     public class Program
     {
