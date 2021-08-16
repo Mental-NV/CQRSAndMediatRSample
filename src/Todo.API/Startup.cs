@@ -6,7 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Todo.Domain.Models;
 using Todo.Infrastructure;
 
-namespace TodoApi
+namespace Todo.Api
 {
     public class Startup
     {

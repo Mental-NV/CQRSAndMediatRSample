@@ -7,7 +7,7 @@ using Todo.Domain.Commands;
 using Todo.Domain.Models;
 using Todo.Domain.Queries;
 
-namespace TodoApi.Controllers
+namespace Todo.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
