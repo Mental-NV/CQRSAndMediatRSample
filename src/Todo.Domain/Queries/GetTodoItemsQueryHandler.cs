@@ -4,9 +4,9 @@ using System.Threading;
 using System.Threading.Tasks;
 
 using MediatR;
-using TodoApi.Application.Models;
+using Todo.Domain.Models;
 
-namespace TodoApi.Application.Queries
+namespace Todo.Domain.Queries
 {
     public class GetTodoItemsQueryHandler : IRequestHandler<GetTodoItemsQuery, IEnumerable<TodoItem>>
     {

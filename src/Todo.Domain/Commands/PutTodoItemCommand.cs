@@ -1,7 +1,7 @@
 using MediatR;
-using TodoApi.Application.Models;
+using Todo.Domain.Models;
 
-namespace TodoApi.Application.Commands
+namespace Todo.Domain.Commands
 {
     public class PutTodoItemCommand : IRequest<bool>
     {

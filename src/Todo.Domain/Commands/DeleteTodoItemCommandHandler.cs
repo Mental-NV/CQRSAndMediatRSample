@@ -2,7 +2,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using MediatR;
 
-namespace TodoApi.Application.Commands
+namespace Todo.Domain.Commands
 {
     public class DeleteTodoItemCommandHandler : IRequestHandler<DeleteTodoItemCommand, bool>
     {

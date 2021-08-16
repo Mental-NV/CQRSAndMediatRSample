@@ -2,9 +2,9 @@ using System;
 using System.Threading;
 using System.Threading.Tasks;
 using MediatR;
-using TodoApi.Application.Models;
+using Todo.Domain.Models;
 
-namespace TodoApi.Application.Commands
+namespace Todo.Domain.Commands
 {
     public class PostTodoItemCommandHandler : IRequestHandler<PostTodoItemCommand, TodoItem>
     {

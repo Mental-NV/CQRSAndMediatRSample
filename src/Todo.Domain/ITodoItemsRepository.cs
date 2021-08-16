@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using TodoApi.Application.Models;
+using Todo.Domain.Models;
 
-namespace TodoApi.Application
+namespace Todo.Domain
 {
     public interface ITodoItemsRepository
     {

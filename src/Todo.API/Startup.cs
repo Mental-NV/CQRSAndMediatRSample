@@ -1,13 +1,10 @@
-using System.Reflection;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using TodoApi.Application;
-using TodoApi.Application.Models;
-using TodoApi.Infrastructure;
+using Todo.Domain.Models;
+using Todo.Infrastructure;
 
 namespace TodoApi
 {
@@ -24,10 +21,8 @@ namespace TodoApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services
-                .AddDbContext<TodoContext>(opt => opt.UseInMemoryDatabase("TodoList"))
-                .AddScoped<ITodoItemsRepository, TodoItemsRepository>()
-                .AddMediatR(typeof(Startup));
+            services.AddTodoItemsRepository();
+            services.AddMediatR(typeof(TodoItem));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

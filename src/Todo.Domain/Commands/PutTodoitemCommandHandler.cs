@@ -3,7 +3,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using MediatR;
 
-namespace TodoApi.Application.Commands
+namespace Todo.Domain.Commands
 {
     public class PutTodoitemCommandHandler : IRequestHandler<PutTodoItemCommand, bool>
     {

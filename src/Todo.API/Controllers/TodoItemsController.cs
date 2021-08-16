@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using TodoApi.Application.Commands;
-using TodoApi.Application.Models;
-using TodoApi.Application.Queries;
+using Todo.Domain.Commands;
+using Todo.Domain.Models;
+using Todo.Domain.Queries;
 
 namespace TodoApi.Controllers
 {

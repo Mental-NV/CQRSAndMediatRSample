@@ -1,6 +1,6 @@
 using MediatR;
 
-namespace TodoApi.Application.Commands
+namespace Todo.Domain.Commands
 {
     public class DeleteTodoItemCommand : IRequest<bool>
     {

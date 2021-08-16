@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using TodoApi.Application;
-using TodoApi.Application.Models;
+using Todo.Domain;
+using Todo.Domain.Models;
 
-namespace TodoApi.Infrastructure
+namespace Todo.Infrastructure
 {
     public class TodoItemsRepository : ITodoItemsRepository
     {
