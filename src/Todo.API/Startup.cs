@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Todo.Domain.Models;
-using Todo.Infrastructure;
+using Todo.Infrastructure.Dapper;
 
 namespace Todo.API
 {
@@ -21,7 +21,7 @@ namespace Todo.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddTodoItemsRepository();
+            services.AddTodoItemsRepositoryDapper(Configuration.GetConnectionString("SqlServer"));
             services.AddMediatR(typeof(TodoItem));
         }
 
